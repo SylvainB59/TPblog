@@ -12,7 +12,7 @@ $billet = $bdd->query('SELECT * FROM billets');
 			<p><?php echo $donnees['contenu']; ?></p>
 			<div>
 				<p>Le <?php echo $donnees['date_creation']; ?></p>
-				<p><a href="">Commentaires<!-- (<?php // echo $com['nb_com'] ?>) --></a></p>
+				<p><a href="article.php?article=<?php echo $donnees['id'] ?>">Commentaires<!-- (<?php // echo $com['nb_com'] ?>) --></a></p>
 			</div>
 		</article>
 	<?php
